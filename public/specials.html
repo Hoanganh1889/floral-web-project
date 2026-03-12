@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Floral Design - Ưu đãi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background: #fff7fb;
+        color: #333;
+      }
+
+      header {
+        background: white;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #444;
+      }
+
+      nav a:hover {
+        color: #d94f8a;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 40px 20px 20px;
+      }
+
+      .hero h1 {
+        color: #7a2c52;
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 18px;
+        color: #666;
+      }
+
+      .specials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #d94f8a;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      .card h3 {
+        color: #7a2c52;
+        margin: 8px 0 10px;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: #888;
+        margin-right: 8px;
+      }
+
+      .new-price {
+        color: #d94f8a;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 15px;
+        background: #d94f8a;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        background: #b93a72;
+      }
+
+      .banner {
+        margin-top: 60px;
+        background: linear-gradient(135deg, #fbd3e9, #fceabb);
+        padding: 35px 20px;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      .banner h2 {
+        color: #7a2c52;
+        margin-bottom: 10px;
+      }
+
+      .banner p {
+        color: #5a4b52;
+        margin-bottom: 20px;
+      }
+
+      footer {
+        margin-top: 60px;
+        background: #7a2c52;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="home_pages.html">Trang chủ</a></li>
+            <li><a href="about_us.html">Giới thiệu</a></li>
+            <li><a href="bouquets.html">Bó hoa</a></li>
+            <li><a href="specials.html">Ưu đãi</a></li>
+            <li><a href="contacts.html">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="hero">
+        <h1>Ưu đãi đặc biệt</h1>
+        <p>
+          Khám phá những chương trình khuyến mãi hấp dẫn dành riêng cho khách
+          hàng của Floral Design. Đặt hoa ngay hôm nay để nhận mức giá tốt nhất.
+        </p>
+      </section>
+
+      <section class="specials">
+        <div class="card">
+          <img src="images/img_prod.jpg" alt="Ưu đãi hoa hồng" />
+          <div class="card-content">
+            <span class="badge">Giảm 20%</span>
+            <h3>Bó hoa hồng đỏ lãng mạn</h3>
+            <p>
+              Phù hợp cho sinh nhật, kỷ niệm và những dịp đặc biệt đầy yêu
+              thương.
+            </p>
+            <p>
+              <span class="old-price">500.000đ</span
+              ><span class="new-price">400.000đ</span>
+            </p>
+            <a href="contacts.html">Đặt ngay</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/img_prod-13.jpg" alt="Ưu đãi giỏ hoa" />
+          <div class="card-content">
+            <span class="badge">Mua 1 tặng 1</span>
+            <h3>Giỏ hoa chúc mừng</h3>
+            <p>
+              Thiết kế sang trọng cho khai trương, lễ kỷ niệm và sự kiện quan
+              trọng.
+            </p>
+            <p>
+              <span class="old-price">700.000đ</span
+              ><span class="new-price">700.000đ</span>
+            </p>
+            <a href="contacts.html">Nhận ưu đãi</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/img_prod-14.jpg" alt="Ưu đãi hoa cưới" />
+          <div class="card-content">
+            <span class="badge">Giảm 15%</span>
+            <h3>Hoa cưới thanh lịch</h3>
+            <p>
+              Thiết kế nhẹ nhàng, tinh tế giúp ngày trọng đại của bạn thêm hoàn
+              hảo.
+            </p>
+            <p>
+              <span class="old-price">850.000đ</span
+              ><span class="new-price">722.000đ</span>
+            </p>
+            <a href="contacts.html">Đặt lịch tư vấn</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <h2>Ưu đãi cuối tuần</h2>
+        <p>Miễn phí giao hàng cho đơn từ 500.000đ trong khu vực nội thành.</p>
+        <a
+          href="bouquets.html"
+          style="
+            background: #d94f8a;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+          "
+          >Xem thêm sản phẩm</a
+        >
+      </section>
+    </div>
+
+    <footer>
+      <p>Floral Design - Nghệ thuật từ những cánh hoa</p>
+      <p>© 2026 Floral Design. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
