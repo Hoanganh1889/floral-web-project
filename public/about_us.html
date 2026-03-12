@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Floral Design - Giới thiệu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#fff7fb;
+color:#333;
+}
+
+header{
+background:white;
+padding:20px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+padding:0;
+}
+
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#444;
+}
+
+nav a:hover{
+color:#d94f8a;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h1{
+color:#7a2c52;
+font-size:36px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+margin-top:15px;
+font-size:18px;
+}
+
+.about-section{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+margin-top:40px;
+}
+
+.about-section img{
+width:100%;
+border-radius:10px;
+}
+
+.values{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.value-box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.value-box h3{
+color:#d94f8a;
+}
+
+.team{
+margin-top:60px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.member{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+text-align:center;
+padding:20px;
+}
+
+.member img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+footer{
+margin-top:60px;
+background:#7a2c52;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+.about-section{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<nav>
+<ul>
+<li><a href="home_pages.html">Trang chủ</a></li>
+<li><a href="about_us.html">Giới thiệu</a></li>
+<li><a href="bouquets.html">Bó hoa</a></li>
+<li><a href="specials.html">Ưu đãi</a></li>
+<li><a href="contacts.html">Liên hệ</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<div class="container">
+
+<section class="hero">
+<h1>Về Floral Design</h1>
+<p>
+Floral Design là cửa hàng hoa tươi chuyên thiết kế các bó hoa nghệ thuật dành cho
+sinh nhật, khai trương, cưới hỏi và những dịp đặc biệt. 
+Chúng tôi tin rằng mỗi bó hoa đều mang theo một thông điệp yêu thương.
+</p>
+</section>
+
+<section class="about-section">
+
+<img src="images/img_welcome.jpg" alt="Cửa hàng hoa">
+
+<div>
+<h2>Câu chuyện của chúng tôi</h2>
+
+<p>
+Floral Design được thành lập với mong muốn mang vẻ đẹp của thiên nhiên
+đến gần hơn với mọi người. Từ những bó hoa đơn giản đến các thiết kế
+hoa cao cấp, chúng tôi luôn đặt sự tinh tế và chất lượng lên hàng đầu.
+</p>
+
+<p>
+Với đội ngũ yêu hoa và giàu kinh nghiệm, chúng tôi luôn sáng tạo
+những thiết kế độc đáo để mỗi sản phẩm đều mang dấu ấn riêng.
+</p>
+
+</div>
+
+</section>
+
+<section class="values">
+
+<div class="value-box">
+<h3>Hoa tươi mỗi ngày</h3>
+<p>Chúng tôi lựa chọn hoa tươi từ các nhà vườn uy tín để đảm bảo chất lượng.</p>
+</div>
+
+<div class="value-box">
+<h3>Thiết kế sáng tạo</h3>
+<p>Mỗi bó hoa được thiết kế với phong cách riêng và sự tinh tế.</p>
+</div>
+
+<div class="value-box">
+<h3>Giao hàng nhanh</h3>
+<p>Dịch vụ giao hoa tận nơi nhanh chóng và an toàn.</p>
+</div>
+
+<div class="value-box">
+<h3>Tận tâm phục vụ</h3>
+<p>Luôn lắng nghe và tư vấn để mang đến lựa chọn tốt nhất cho khách hàng.</p>
+</div>
+
+</section>
+
+<section class="team">
+
+<h2 style="text-align:center;color:#7a2c52;">Đội ngũ của chúng tôi</h2>
+
+<div class="team-grid">
+
+<div class="member">
+<img src="images/img_prod.jpg">
+<h3>Anna</h3>
+<p>Floral Designer</p>
+</div>
+
+<div class="member">
+<img src="images/img_prod-13.jpg">
+<h3>David</h3>
+<p>Creative Florist</p>
+</div>
+
+<div class="member">
+<img src="images/img_prod-14.jpg">
+<h3>Lisa</h3>
+<p>Wedding Specialist</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>Floral Design - Nghệ thuật từ những cánh hoa</p>
+<p>© 2026 Floral Design. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
