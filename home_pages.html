@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floral Design - Trang chủ</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fff7fb, #fff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #d94f8a;
+    }
+
+    .logo span {
+      color: #7a2c52;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+
+    nav ul li a {
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #d94f8a;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 70px 0;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: #7a2c52;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      padding: 12px 22px;
+      margin-right: 12px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #d94f8a;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #b73c70;
+    }
+
+    .btn-secondary {
+      border: 2px solid #d94f8a;
+      color: #d94f8a;
+    }
+
+    .btn-secondary:hover {
+      background: #d94f8a;
+      color: white;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      color: #7a2c52;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .feature-box h3 {
+      color: #d94f8a;
+      margin-bottom: 12px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .product-info h3 {
+      color: #7a2c52;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #d94f8a;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .product-info a {
+      display: inline-block;
+      margin-top: 10px;
+      color: white;
+      background: #d94f8a;
+      padding: 10px 18px;
+      border-radius: 25px;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about img {
+      flex: 1;
+      min-width: 280px;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .about-text h2 {
+      font-size: 34px;
+      color: #7a2c52;
+      margin-bottom: 18px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #fbd3e9, #fceabb);
+      padding: 60px 20px;
+      border-radius: 24px;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      color: #7a2c52;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #5b4b52;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #7a2c52;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-text h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <div class="logo">Floral<span>Design</span></div>
+      <nav>
+        <ul>
+          <li><a href="home_pages.html">Trang chủ</a></li>
+          <li><a href="about_us.html">Giới thiệu</a></li>
+          <li><a href="bouquets.html">Bó hoa</a></li>
+          <li><a href="specials.html">Ưu đãi</a></li>
+          <li><a href="contacts.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Gửi yêu thương qua từng đóa hoa</h1>
+        <p>
+          Floral Design mang đến những bó hoa tinh tế, hiện đại và đầy cảm xúc
+          dành cho sinh nhật, khai trương, cưới hỏi và những khoảnh khắc đáng nhớ.
+        </p>
+        <div class="hero-buttons">
+          <a href="bouquets.html" class="btn-primary">Xem bộ sưu tập</a>
+          <a href="contacts.html" class="btn-secondary">Đặt hoa ngay</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/img_welcome.jpg" alt="Hoa tươi nghệ thuật" />
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Vì sao khách hàng chọn chúng tôi?</h2>
+      <p class="section-subtitle">Sự tinh tế trong từng thiết kế là điều tạo nên khác biệt.</p>
+      <div class="features">
+        <div class="feature-box">
+          <h3>Hoa tươi mỗi ngày</h3>
+          <p>Chọn lọc kỹ từ nguồn hoa chất lượng, giữ vẻ đẹp tươi mới lâu hơn.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Thiết kế sáng tạo</h3>
+          <p>Mỗi bó hoa là một câu chuyện, được phối màu và tạo hình đầy nghệ thuật.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Giao nhanh tận nơi</h3>
+          <p>Hỗ trợ giao hoa nhanh, đúng giờ và đảm bảo hoa nguyên vẹn khi đến tay người nhận.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Tư vấn tận tâm</h3>
+          <p>Giúp bạn chọn mẫu hoa phù hợp với từng dịp và từng thông điệp muốn gửi gắm.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Sản phẩm nổi bật</h2>
+      <p class="section-subtitle">Những mẫu hoa được yêu thích nhất tại Floral Design.</p>
+      <div class="products">
+        <div class="product-card">
+          <img src="images/img_prod.jpg" alt="Bó hoa hồng lãng mạn" />
+          <div class="product-info">
+            <h3>Bó hoa hồng lãng mạn</h3>
+            <p>Phù hợp cho ngày kỷ niệm, sinh nhật và tỏ tình đầy cảm xúc.</p>
+            <div class="price">450.000đ</div>
+            <a href="bouquets.html">Xem chi tiết</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/img_prod-13.jpg" alt="Giỏ hoa chúc mừng" />
+          <div class="product-info">
+            <h3>Giỏ hoa chúc mừng</h3>
+            <p>Thiết kế sang trọng, nổi bật dành cho khai trương và sự kiện.</p>
+            <div class="price">650.000đ</div>
+            <a href="bouquets.html">Xem chi tiết</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/img_prod-14.jpg" alt="Hoa cưới thanh lịch" />
+          <div class="product-info">
+            <h3>Hoa cưới thanh lịch</h3>
+            <p>Phong cách nhẹ nhàng, tinh tế, giúp ngày vui thêm trọn vẹn.</p>
+            <div class="price">800.000đ</div>
+            <a href="bouquets.html">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="images/img_welcome.jpg" alt="Cửa hàng hoa Floral Design" />
+      <div class="about-text">
+        <h2>Về Floral Design</h2>
+        <p>
+          Chúng tôi tin rằng mỗi bó hoa không chỉ để ngắm nhìn, mà còn là cách thể hiện tình cảm,
+          sự trân trọng và những lời chúc tốt đẹp nhất.
+        </p>
+        <p>
+          Với đội ngũ yêu hoa và giàu kinh nghiệm, Floral Design luôn mong muốn mang đến
+          những thiết kế mang dấu ấn riêng, phù hợp với từng khách hàng.
+        </p>
+        <a href="about_us.html" class="btn-primary">Tìm hiểu thêm</a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Đặt hoa cho khoảnh khắc đặc biệt của bạn</h2>
+      <p>
+        Hãy để Floral Design cùng bạn tạo nên những món quà ý nghĩa và đáng nhớ.
+      </p>
+      <a href="contacts.html" class="btn-primary">Liên hệ ngay</a>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Floral Design</strong> - Nghệ thuật từ những cánh hoa</p>
+    <p>Email: contact@floraldesign.com | Hotline: 0901 234 567</p>
+    <p>&copy; 2026 Floral Design. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
